@@ -1,23 +1,68 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
+import { StyleSheet, Text, View, Image } from "react-native";
 
 export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-        <Text>Changes you make will automatically reload.</Text>
-        <Text>Shake your phone to open the developer menu.</Text>
+        <Image
+          style={styles.ourImage}
+          source={{
+            uri:
+              "https://www.clker.com/cliparts/I/a/V/A/7/A/blue-star-outline-md.png"
+          }}
+        />
+        <Image
+          style={styles.ourImage}
+          source={{
+            uri:
+              "https://www.clker.com/cliparts/I/a/V/A/7/A/blue-star-outline-md.png"
+          }}
+        />
+        <Image
+          style={styles.ourImage}
+          source={{
+            uri:
+              "https://www.clker.com/cliparts/I/a/V/A/7/A/blue-star-outline-md.png"
+          }}
+        />
+        <Image
+          style={styles.ourImage}
+          source={{
+            uri:
+              "https://www.clker.com/cliparts/I/a/V/A/7/A/blue-star-outline-md.png"
+          }}
+        />
+        <Image
+          style={styles.ourImage}
+          source={{
+            uri:
+              "https://www.clker.com/cliparts/I/a/V/A/7/A/blue-star-outline-md.png"
+          }}
+        />
+        <Image
+          style={styles.ourImage}
+          source={{
+            uri:
+              "https://www.clker.com/cliparts/I/a/V/A/7/A/blue-star-outline-md.png"
+          }}
+        />
       </View>
     );
   }
 }
 
 const styles = StyleSheet.create({
+  ourImage: {
+    height: 50,
+    width: 50,
+    resizeMode: "contain"
+  },
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+    flexDirection: "row",
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center"
+  }
 });
