@@ -39,14 +39,18 @@ export default class App extends React.Component {
   }
 
   render() {
-    return (
-      <View style={styles.container}>
-        <ScorecardItem />
-        <ScorecardItem />
-        <ScorecardItem />
-        <ScorecardItem />
-      </View>
-    );
+    const scoreItems =
+      this.state.scores != null
+        ? this.state.scores.map(score => (
+            <ScorecardItem
+              awayTeam={score.awayTeam}
+              awayScore={score.awayScore}
+              homeTeam={score.homeTeam}
+              homeScore={score.homeScore}
+            />
+          ))
+        : null;
+    return <View style={styles.container}>{scoreItems}</View>;
   }
 }
 

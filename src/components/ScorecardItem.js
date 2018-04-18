@@ -29,13 +29,13 @@ class ScorecardItem extends Component {
       <View style={styles.cardItemContainer}>
         <View style={styles.scoreContainer}>
           <View>
-            <Text style={styles.teamName}>Detroit</Text>
+            <Text style={styles.teamName}>{this.props.awayTeam}</Text>
           </View>
-          <Text style={styles.teamScore}>8</Text>
+          <Text style={styles.teamScore}>{this.props.awayScore}</Text>
           <View>
-            <Text style={styles.teamName}>Minnesota</Text>
+            <Text style={styles.teamName}>{this.props.homeTeam}</Text>
           </View>
-          <Text style={styles.teamScore}>2</Text>
+          <Text style={styles.teamScore}>{this.props.homeScore}</Text>
         </View>
       </View>
     );
