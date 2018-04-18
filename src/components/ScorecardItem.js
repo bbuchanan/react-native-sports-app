@@ -7,7 +7,9 @@ const styles = StyleSheet.create({
     borderColor: "black",
     borderWidth: 1,
     margin: 12,
-    alignItems: "center"
+    alignItems: "center",
+    width: 150,
+    height: 100
   },
   scoreContainer: {
     margin: 3
@@ -29,11 +31,15 @@ class ScorecardItem extends Component {
       <View style={styles.cardItemContainer}>
         <View style={styles.scoreContainer}>
           <View>
-            <Text style={styles.teamName}>{this.props.awayTeam}</Text>
+            <Text numberOfLines={1} style={styles.teamName}>
+              {this.props.awayTeam}
+            </Text>
           </View>
           <Text style={styles.teamScore}>{this.props.awayScore}</Text>
           <View>
-            <Text style={styles.teamName}>{this.props.homeTeam}</Text>
+            <Text numberOfLines={1} style={styles.teamName}>
+              {this.props.homeTeam}
+            </Text>
           </View>
           <Text style={styles.teamScore}>{this.props.homeScore}</Text>
         </View>
