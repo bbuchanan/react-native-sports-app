@@ -5,7 +5,7 @@
   "devDependencies": {
     "babel-preset-react-native-stage-0": "^1.0.1",
     "jest-react-native": "^18.0.0",
-    "react-test-renderer": "16.2.0"
+    "react-test-renderer": "16.3.2"
   },
   "scripts": {
     "start": "react-native start",
@@ -19,6 +19,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "react": "16.3.2",
-    "react-native": "0.53.0"
+    "react-native": "0.55.3",
+    "react-native-datepicker": "^1.7.1"
   }
 }
