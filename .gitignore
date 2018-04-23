@@ -17,8 +17,8 @@ yarn-error.log*
 # native build files
 /ios/build
 /ios/Pods
-/ios/bsnmobile.xcodeproj/project.xcworkspace/xcuserdata
-/ios/bsnmobile.xcodeproj/xcuserdata
+/ios/sportsapp.xcodeproj/project.xcworkspace/xcuserdata
+/ios/sportsapp.xcodeproj/xcuserdata
 /android/build
 /android/app/build
 /android/.gradle

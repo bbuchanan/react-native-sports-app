@@ -4,6 +4,7 @@ import DatePicker from "react-native-datepicker";
 import Toast from "react-native-root-toast";
 import moment from "moment";
 import axios from "./src/axios-sports";
+import Icon from "react-native-vector-icons/Ionicons";
 import ScorecardItem from "./src/components/ScorecardItem";
 
 export default class App extends React.Component {
@@ -20,7 +21,7 @@ export default class App extends React.Component {
 
   loadScores = () => {
     axios
-      .get(`scoreboard.json?1fordate=${this.state.date}`)
+      .get(`scoreboard.json?fordate=${this.state.date}`)
       .then(data => {
         let scores = data.data.scoreboard.gameScore.map(score => {
           return {
@@ -54,11 +55,15 @@ export default class App extends React.Component {
 
   render() {
     let toast = null;
+    Icon.getImageSource("ios-home").then(icon => {
+      console.log("loaded icons");
+    });
     if (this.state.hadError) {
       toast = <Toast visible>{this.state.errorMessage}</Toast>;
     }
     return (
       <View style={styles.container}>
+        <Icon name="ios-contact" />
         <DatePicker
           style={{ width: 200 }}
           date={this.state.date}
