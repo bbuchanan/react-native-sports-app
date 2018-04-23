@@ -55,7 +55,7 @@ export default class App extends React.Component {
 
   render() {
     let toast = null;
-    Icon.getImageSource("ios-home").then(icon => {
+    Icon.getImageSource("md-home").then(icon => {
       console.log("loaded icons");
     });
     if (this.state.hadError) {
