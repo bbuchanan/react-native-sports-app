@@ -14,8 +14,8 @@ const startTabs = () => {
           icon: sources[0]
         },
         {
-          screen: "sports-app.Screen2",
-          label: "Screen 2",
+          screen: "sports-app.StatsScreen",
+          label: "Stats",
           icon: sources[1]
         }
       ]
